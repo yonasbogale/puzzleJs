@@ -1,0 +1,25 @@
+<script>
+  module.exports = {
+    onCreate() {
+      this.blabla = 5;
+    }
+  }
+</script>
+
+<template>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Title</title>
+    </head>
+    <body>
+        <div>
+            <fragment from="Browsing" name="header"></fragment>
+        </div>
+        <fragment from="Browsing" name="content"></fragment>
+        ${this.blabla}
+        <fragment from="Browsing" name="footer"></fragment>
+    </body>
+    </html>
+</template>
